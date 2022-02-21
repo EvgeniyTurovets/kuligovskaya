@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('partials/head.html')
+<body>
+    <div class="app">
+
+        @include('partials/header.html')
+        <main class="main" id="main" style="height: 2000px;">
+        <section class="mob-img-sec">
+            <img src="./img/main/main-mob.jpg">
+        </section>
+        <section class="main-slider">
+            <div class="main-slider__wrap">
+                <div class="swiper" id="main-slider-img">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main-slider-img__item">
+                                <img class="swiper-lazy main-slider__img" data-src="./img/main/1.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider-img__item">
+                                <img class="swiper-lazy main-slider__img" data-src="./img/main/2.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider-img__item">
+                                <img class="swiper-lazy main-slider__img" data-src="./img/main/1.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider-img__item">
+                                <img class="swiper-lazy main-slider__img" data-src="./img/main/2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper" id="main-slider-img-sub">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main-slider-img__item2">
+                                <img class="main-slider__img2" src="./img/main/1.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider-img__item2">
+                                <img class="main-slider__img2" src="./img/main/2.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider-img__item2">
+                                <img class="main-slider__img2" src="./img/main/1.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider-img__item2">
+                                <img class="main-slider__img2" src="./img/main/2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-slider-two">
+            <div class="swiper" id="main-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-slider__item">
+                           
+                            <div class="main-slider__item__bot">
+                                <div class="wrap">
+                                    <div class="main-slider__item__content">
+                                        <div class="main-slider__item__content__wrap">
+                                            <div class="tag">Акция</div>
+                                            <div class="main-slider__item__title">
+                                                Дорогая недвижимость
+                                                Екатеринбурга
+                                            </div>
+                                            <div class="main-slider__item__text">
+                                                Без комиссий и переплат
+                                                Закрытые предложения и продажи
+                                                Все элитные новостройки
+                                            </div>
+                                            <a href="" class="btn">Подробнее</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-slider__item">
+                           
+                            <div class="main-slider__item__bot">
+                                <div class="wrap">
+                                    <div class="main-slider__item__content">
+                                        <div class="main-slider__item__content__wrap">
+                                            <div class="tag">Акция</div>
+                                            <div class="main-slider__item__title">
+                                                Дорогая недвижимость
+                                                Екатеринбурга2
+                                            </div>
+                                            <div class="main-slider__item__text">
+                                                Какой то другой текст где много слов
+                                            </div>
+                                            <a href="" class="btn">Подробнее</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper__action">
+                    <div class="wrap">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        </main>
+        @include('partials/footer.html')
+    </div>
+  <script src="./js/libs/jquery.min.js"></script>
+  <script src="./js/vendor.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
