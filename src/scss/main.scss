@@ -62,7 +62,7 @@ a{
 .app{
     padding-top: 246px;
     overflow: hidden;
-    max-width: 2400px;
+    max-width: 2800px;
     margin: 0 auto;
 }
 @media(max-width: 991px){
@@ -76,20 +76,37 @@ a{
     font-size: 15px;
     line-height: 18px;
     color: #fff;
-    padding: 26px 114px;
+    padding: 26px 25px;
+    max-width: 306px;
+    width: 100%;
     background: #3C4AD2;
+    border: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: 0.2s all;
+    cursor: pointer;
 }
 .btn:hover{
     box-shadow: 0 0 20px rgba($color: #3C4AD2, $alpha: 0.5)
 }
-
+.btn-border{
+    padding: 13px 71px 19px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    border: 1px solid #3C4AD2;
+    transition: 0.3s all;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-border:hover{
+    background: #3C4AD2;
+}
 @media(max-width: 767px){
     .btn{
-        padding: 18px 133px;
+       
         font-size: 13px;
     }
    
