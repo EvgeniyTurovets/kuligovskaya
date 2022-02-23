@@ -166,5 +166,8 @@ $(function () {
       $('.vakancii__body').slideUp(300);
     }
   });
+  $('.reviews__more').on('click', function () {
+    $(this).closest('.reviews__item__des').toggleClass('active');
+  });
 });
 //# sourceMappingURL=main.js.map
