@@ -113,7 +113,8 @@ a{
 }
 @media(max-width: 767px){
     .btn{
-       
+        padding-top: 18px;
+        padding-bottom: 18px;
         font-size: 13px;
     }
    
@@ -135,7 +136,13 @@ a{
 .input::placeholder{
     color: rgba($color: #fff, $alpha: 0.5)
 }
-
+.d-flex{
+    display: flex;
+}
+.flex-center{
+    justify-content: center;
+}
 @import './components/header.scss';
 @import './components/index.scss';
 @import './components/footer.scss';
+@import './components/news.scss';
