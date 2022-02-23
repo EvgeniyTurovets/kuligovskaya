@@ -104,6 +104,13 @@ a{
 .btn-border:hover{
     background: #3C4AD2;
 }
+.btn-white{
+    background-color: #fff;
+    color: #3C4AD2;
+}
+.btn-white:hover{
+    box-shadow: 0 0 20px rgba($color: #fff, $alpha: 0.5)
+}
 @media(max-width: 767px){
     .btn{
        
@@ -111,5 +118,24 @@ a{
     }
    
 }
+.input{
+    padding: 0 27px;
+    height: 53px;
+    border: 1px solid rgba($color: #fff, $alpha: 0.4);
+    background-color: transparent;
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+}
+.input:focus{
+    outline: navajowhite;
+    border: 1px solid rgba($color: #fff, $alpha: 1);
+}
+.input::placeholder{
+    color: rgba($color: #fff, $alpha: 0.5)
+}
+
 @import './components/header.scss';
 @import './components/index.scss';
+@import './components/footer.scss';

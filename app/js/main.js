@@ -998,6 +998,19 @@ $(function () {
     }
   });
 
+  function burgerOpen() {
+    $('#burger').toggleClass('active');
+    $('#header').toggleClass('open-menu');
+    $('.mob-nav').fadeToggle(300);
+  }
+
+  $('#burger').on('click', function () {
+    burgerOpen();
+  });
+  $('#burger-footer').on('click', function () {
+    burgerOpen();
+  });
+
   if ($(window).width() > 991) {
     var swiper = new Swiper('#main-slider', {
       pagination: {
@@ -1079,6 +1092,7 @@ $(function () {
       var customSwiper = new Swiper(el, {
         slidesPerView: 1,
         spaceBetween: 20,
+        lazy: true,
         pagination: {
           el: '.swiper-pagination-custom',
           clickable: true
