@@ -155,5 +155,16 @@ $(function () {
   $(window).on('resize', function () {
     refreshMainCompany();
   });
+  $('.vakancii__btn').on('click', function () {
+    if (!$(this).hasClass('active')) {
+      $('.vakancii__btn').removeClass('active');
+      $('.vakancii__body').slideUp(300);
+      $(this).addClass('active');
+      $(this).closest('.vakancii__row').find('.vakancii__body').slideDown(300);
+    } else {
+      $('.vakancii__btn').removeClass('active');
+      $('.vakancii__body').slideUp(300);
+    }
+  });
 });
 //# sourceMappingURL=main.js.map
